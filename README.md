@@ -1,2 +1,2 @@
 # collegecookbook.github.io
-For SENG 513 
+Assignment 1 for SENG 513 F2022 at the University of Calgary.
