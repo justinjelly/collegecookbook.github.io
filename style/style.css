@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    /* reference: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1*/
+}
+
 body {
     background-color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -61,11 +66,18 @@ li a:hover {
     text-align: right;
 }
 
+
 .mainimage {
     border-radius: 10px;
     max-width: 500px;
     height:auto;
+    animation: fadeIn 5s;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 hr {
     border: 2px solid black;
@@ -88,7 +100,12 @@ h2 {
 }
 
 .icon {
-    width: 40px;
+    width: 60px;
+}
+
+.ricon {
+    padding: 10px;
+    width: 100px;
 }
 
 .recipelist {
@@ -132,6 +149,7 @@ footer {
     width: 17em;
     height: 17em;
     object-fit: cover;
+    animation: fadeIn 5s;
 }
 
 .list {
@@ -139,4 +157,16 @@ footer {
     padding-left: 10em;
     padding-right: 9em;
     line-height: 2em;
-    }
+}
+
+.iconfoot {
+    display: flex;
+    justify-content: center;
+}
+
+.iconf{
+    padding-left:20px;
+    padding-right:20px;
+    width: 50px;
+}
+
